@@ -14,7 +14,7 @@ Note that these settings assume that the *Inconsolata* font is already installed
       rm /tmp/$font && \
       unset font
 
-Click **"install"** in //Font Book.app// when prompted, then quit.
+Click **"install"** in *Font Book.app* when prompted, then quit.
 
 ## iTerm.app Installation ##
 Need iTerm.app? Simple:
