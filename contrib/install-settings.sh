@@ -20,6 +20,19 @@ if ps wwwaux | egrep -q 'iTerm\.app' >/dev/null ; then
 fi
 
 plist="com.googlecode.iterm2.plist"
-plist_url="https://github.com/fnichol/macosx-iterm2-settings/raw/master/${plist}"
+plist_url="https://github.com/fnichol/macosx-iterm2-settings/raw/master/$plist"
+new_plist="/tmp/${plist}-$$"
+installed_plist="$HOME/Library/Preferences/$plist"
 
-curl -L "$plist_url" -o "${HOME}/Library/Preferences/${plist}"
+printf "==> Downloading plist from $plist_url ...\n"
+
+curl -L "$plist_url" | plutil -convert binary1 -o $new_plist -
+if [[ $? -eq 0 ]] ; then
+  cp -f "$new_plist" "$installed_plist" && rm -f $new_plist
+  printf "==> iTerm preferences installed/updated in $installed_plist, w00t\n"
+  exit $?
+else
+  printf "\n>>>> The download or conversion from XML to binary failed. Your current\n"
+  printf "     preferences have not been changed.\n\n"
+  exit 5
+fi
