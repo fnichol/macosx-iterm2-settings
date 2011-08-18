@@ -312,9 +312,9 @@
     <key>NSWindow Frame NSFontPanel</key>
     <string>477 95 445 270 0 0 1920 1178 </string>
     <key>NSWindow Frame Preferences</key>
-    <string>702 296 805 484 0 0 1920 1178 </string>
+    <string>411 209 805 484 0 0 1366 746 </string>
     <key>NSWindow Frame iTerm Window 0</key>
-    <string>254 146 570 586 0 0 1920 1178 </string>
+    <string>150 39 570 586 0 0 1366 746 </string>
     <key>New Bookmarks</key>
     <array>
       <dict>
