@@ -1413,7 +1413,7 @@
     <key>UseCompactLabel</key>
     <true/>
     <key>UseLionStyleFullscreen</key>
-    <true/>
+    <false/>
     <key>WebKitDefaultFontSize</key>
     <integer>11</integer>
     <key>WebKitStandardFont</key>
