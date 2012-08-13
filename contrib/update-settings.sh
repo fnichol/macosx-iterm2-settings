@@ -4,10 +4,12 @@ set -e
 working_prefs="$HOME/Library/Preferences/com.googlecode.iterm2.plist"
 repo_prefs="$(dirname $0)/../com.googlecode.iterm2.plist"
 
-printf "==> Copying working preferences from: $working_prefs ...\n"
+log()   { printf -- "-----> $*\n" ; return $? ; }
+
+log "Copying working preferences from: $working_prefs"
 plutil -convert xml1 -o - $working_prefs | xmllint --format - > $repo_prefs
 exit_status=$?
-printf "===> Updated XML in $(basename $repo_prefs).\n"
+log "Updated XML in $(basename $repo_prefs)."
 
-printf "Run: git diff to see changes.\n"
+log "Run: `git diff` to see changes."
 exit $exit_status
