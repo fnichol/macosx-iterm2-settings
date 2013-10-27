@@ -2,7 +2,7 @@
 set -e
 
 plist="com.googlecode.iterm2.plist"
-plist_url="https://github.com/fnichol/macosx-iterm2-settings/raw/master/$plist"
+plist_url="https://raw.github.com/fnichol/macosx-iterm2-settings/master/$plist"
 new_plist="/tmp/${plist}-$$"
 installed_plist="$HOME/Library/Preferences/$plist"
 
