@@ -22,7 +22,7 @@ Click **"install"** in *Font Book.app* when prompted, then quit.
 Now install the settings:
 
 ```sh
-curl -L https://github.com/fnichol/macosx-iterm2-settings/raw/master/contrib/install-settings.sh | bash
+curl -L https://raw.github.com/fnichol/macosx-iterm2-settings/master/contrib/install-settings.sh | bash
 ```
 
 ## iTerm.app Installation
