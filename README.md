@@ -3,7 +3,7 @@
 ## Installation
 You can run the included bash script to install or update your preferences.
 Note that iTerm.app could overwrite your preferences when it exits so there
-are some checks to make sure it's doing it's work cleanly.
+are some checks to make sure it's doing its work cleanly.
 
 Note that these settings assume that the *Inconsolata* font is already
 installed. To download and install, simply:
