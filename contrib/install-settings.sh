@@ -32,6 +32,7 @@ curl -L "$plist_url" | plutil -convert binary1 -o $new_plist -
 
 if [[ $? -eq 0 ]] ; then
   cp -f "$new_plist" "$installed_plist" && rm -f $new_plist
+  defaults read com.googlecode.iterm2
   log "iTerm preferences installed/updated in $installed_plist, w00t"
 else
   warn "The download or conversion from XML to binary failed. Your current"
