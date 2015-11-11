@@ -5,7 +5,7 @@
     <key>AFRStrokeThickness</key>
     <real>0.0</real>
     <key>AdjustWindowForFontSizeChange</key>
-    <true/>
+    <false/>
     <key>AdvancedFontRendering</key>
     <false/>
     <key>AllowClipboardAccess</key>
@@ -5465,9 +5465,9 @@
     <key>NSWindow Frame NSFontPanel</key>
     <string>477 95 445 270 0 0 1920 1178 </string>
     <key>NSWindow Frame Preferences</key>
-    <string>397 933 924 485 0 0 2560 1418 </string>
+    <string>86 292 924 485 0 0 1280 777 </string>
     <key>NSWindow Frame iTerm Window 0</key>
-    <string>5 822 570 586 0 0 2560 1418 </string>
+    <string>2 189 570 586 0 0 1280 777 </string>
     <key>New Bookmarks</key>
     <array>
       <dict>
@@ -6673,7 +6673,7 @@
     <key>PassOnControlClick</key>
     <false/>
     <key>PasteFromClipboard</key>
-    <true/>
+    <false/>
     <key>PointerActions</key>
     <dict>
       <key>Button,1,1,,</key>
@@ -6722,11 +6722,11 @@
     <key>SUEnableAutomaticChecks</key>
     <true/>
     <key>SUFeedURL</key>
-    <string>http://iterm2.com/appcasts/testing.xml</string>
+    <string>https://iterm2.com/appcasts/testing.xml</string>
     <key>SUHasLaunchedBefore</key>
     <true/>
     <key>SULastCheckTime</key>
-    <date>2014-03-13T19:59:03Z</date>
+    <date>2015-11-11T00:12:26Z</date>
     <key>SavePasteHistory</key>
     <false/>
     <key>ShowBookmarkName</key>
@@ -7183,6 +7183,6 @@
     <key>findRegex_iTerm</key>
     <false/>
     <key>iTerm Version</key>
-    <string>1.0.0.20140112</string>
+    <string>2.1.4</string>
   </dict>
 </plist>
