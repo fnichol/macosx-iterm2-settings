@@ -9,7 +9,6 @@ Note that these settings assume that the *Inconsolata* font is already
 installed. To download and install, simply use [Homebrew-Cask](https://github.com/caskroom/homebrew-cask):
 
 ```sh
-brew install caskroom/cask/brew-cask
 brew tap caskroom/fonts
 brew cask install font-inconsolata
 ```
@@ -23,5 +22,5 @@ brew cask install iterm2
 Now install the settings:
 
 ```sh
-curl -L https://raw.github.com/fnichol/macosx-iterm2-settings/master/contrib/install-settings.sh | bash
+curl -sSf https://raw.githubusercontent.com/fnichol/macosx-iterm2-settings/master/contrib/install-settings.sh | bash
 ```

@@ -2,7 +2,7 @@
 set -e
 
 plist="com.googlecode.iterm2.plist"
-plist_url="https://github.com/fnichol/macosx-iterm2-settings/raw/master/$plist"
+plist_url="https://raw.githubusercontent.com/fnichol/macosx-iterm2-settings/master/$plist"
 new_plist="/tmp/${plist}-$$"
 installed_plist="$HOME/Library/Preferences/$plist"
 
@@ -28,11 +28,10 @@ if ps wwwaux | egrep -q 'iTerm\.app' >/dev/null ; then
 fi
 
 log "Downloading plist from $plist_url"
-curl -L "$plist_url" | plutil -convert binary1 -o $new_plist -
+curl -sSf "$plist_url" | plutil -convert binary1 -o $new_plist -
 
 if [[ $? -eq 0 ]] ; then
   cp -f "$new_plist" "$installed_plist" && rm -f $new_plist
-  defaults read com.googlecode.iterm2
   log "iTerm preferences installed/updated in $installed_plist, w00t"
 else
   warn "The download or conversion from XML to binary failed. Your current"
