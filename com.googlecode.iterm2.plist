@@ -3232,9 +3232,13 @@
     <key>NSWindow Frame SessionsPreferences</key>
     <string>630 290 599 388 0 0 2560 1417 </string>
     <key>NSWindow Frame SharedPreferences</key>
-    <string>935 923 796 473 0 0 2560 1417 </string>
+    <string>121 780 918 512 0 0 2560 1417 </string>
     <key>NSWindow Frame iTerm Window 0</key>
-    <string>322 204 570 547 0 0 2560 1417 </string>
+    <string>0 4 1277 1413 0 0 2560 1417 </string>
+    <key>NeverWarnAboutShortLivedSessions_C0369938-1EC7-4FFB-96A8-767F393505E8</key>
+    <true/>
+    <key>NeverWarnAboutShortLivedSessions_C0369938-1EC7-4FFB-96A8-767F393505E8_selection</key>
+    <integer>0</integer>
     <key>NeverWarnAboutShortLivedSessions_FEA54701-D1A2-4CF1-BF5E-328F240FE876</key>
     <true/>
     <key>NeverWarnAboutShortLivedSessions_FEA54701-D1A2-4CF1-BF5E-328F240FE876_selection</key>
