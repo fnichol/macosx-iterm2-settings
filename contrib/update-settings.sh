@@ -1,15 +1,30 @@
 #!/usr/bin/env bash
-set -e
+# shellcheck disable=SC2059
 
-working_prefs="$HOME/Library/Preferences/com.googlecode.iterm2.plist"
-repo_prefs="$(dirname $0)/../com.googlecode.iterm2.plist"
+main() {
+  set -eu
+  if [ -n "${DEBUG:-}" ]; then set -x; fi
 
-log()   { printf -- "-----> $*\n" ; return $? ; }
+  # shellcheck source=contrib/install-settings.sh
+  . "${0%/*}/install-settings.sh"
 
-log "Copying working preferences from: $working_prefs"
-plutil -convert xml1 -o - $working_prefs | xmllint --format - > $repo_prefs
-exit_status=$?
-log "Updated XML in $(basename $repo_prefs)."
+  need_cmd plutil
+  need_cmd xmllint
+  check_for_iterm
 
-log "Run: `git diff` to see changes."
-exit $exit_status
+  local working_prefs repo_prefs
+  working_prefs="$HOME/Library/Preferences/com.googlecode.iterm2.plist"
+  repo_prefs="$(dirname "$0")/../com.googlecode.iterm2.plist"
+
+  header "Copying working preferences from: $working_prefs"
+  if plutil -convert xml1 -o - "$working_prefs" \
+      | xmllint --format - > "$repo_prefs"; then
+    info "Updated XML in $(basename "$repo_prefs")."
+    info "Run: \`git diff\' to see changes."
+  else
+    warn "A failure occured when converting preferences."
+    exit_with "Update failed" 5
+  fi
+}
+
+main "$@" || exit 99
