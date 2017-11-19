@@ -97,6 +97,8 @@ warn() {
 }
 
 # Only invoke `main()` if this file is the running program
-if [[ "$0" == "$BASH_SOURCE" ]]; then
+case "$0" in
+bash|sh|$BASH_SOURCE)
   main "$@" || exit 99
-fi
+  ;;
+esac
