@@ -3227,14 +3227,16 @@
     <string>4 261 606 456 0 0 1280 777 </string>
     <key>NSWindow Frame ProfilesPanel</key>
     <string>705 767 735 382 0 0 2560 1417 </string>
+    <key>NSWindow Frame SUStatusFrame</key>
+    <string>520 562 400 129 0 0 1440 877 </string>
     <key>NSWindow Frame SUUpdateAlert</key>
-    <string>930 597 700 622 0 0 2560 1417 </string>
+    <string>1280 795 700 622 0 0 2560 1417 </string>
     <key>NSWindow Frame SessionsPreferences</key>
-    <string>448 312 606 469 0 0 1440 877 </string>
+    <string>448 408 606 469 0 0 1440 877 </string>
     <key>NSWindow Frame SharedPreferences</key>
-    <string>966 639 918 381 0 0 2560 1417 </string>
+    <string>353 314 796 486 0 0 1440 877 </string>
     <key>NSWindow Frame iTerm Window 0</key>
-    <string>0 0 2560 1440 0 0 2560 1417 </string>
+    <string>0 4 717 873 0 0 1440 877 </string>
     <key>NeverWarnAboutShortLivedSessions_C0369938-1EC7-4FFB-96A8-767F393505E8</key>
     <true/>
     <key>NeverWarnAboutShortLivedSessions_C0369938-1EC7-4FFB-96A8-767F393505E8_selection</key>
@@ -6108,6 +6110,8 @@
     <true/>
     <key>NoSyncHaveShownPromoWithId_4</key>
     <true/>
+    <key>NoSyncHaveUsedCopyMode</key>
+    <true/>
     <key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
     <true/>
     <key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
@@ -6116,6 +6120,8 @@
     <string>6C3F4A91-8B28-4485-A472-05F92E09C91C</string>
     <key>NoSyncPermissionToShowTip</key>
     <false/>
+    <key>NoSyncSuppressClipboardAccessDeniedWarning</key>
+    <true/>
     <key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
     <real>489266920.22005999</real>
     <key>NoSyncTimeOfLastPromo</key>
@@ -6190,7 +6196,7 @@
     <key>SUHasLaunchedBefore</key>
     <true/>
     <key>SULastCheckTime</key>
-    <date>2017-11-21T23:02:30Z</date>
+    <date>2018-09-15T02:48:02Z</date>
     <key>SavePasteHistory</key>
     <false/>
     <key>ShowBookmarkName</key>
@@ -6649,7 +6655,7 @@
     <key>findRegex_iTerm</key>
     <false/>
     <key>iTerm Version</key>
-    <string>3.1.5</string>
+    <string>3.2.0</string>
     <key>kCPKSelectionViewPreferredModeKey</key>
     <integer>0</integer>
     <key>kCPKSelectionViewShowHSBTextFieldsKey</key>
