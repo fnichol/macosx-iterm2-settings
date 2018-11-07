@@ -31,7 +31,7 @@ main() {
 check_for_iterm() {
   need_cmd pgrep
 
-  if [ "$TERM_PROGRAM" = "iTerm.app" ]; then
+  if [ "${TERM_PROGRAM:-}" = "iTerm.app" ]; then
     warn "You appear to be running this script from within iTerm.app which"
     warn "could overwrite your new preferences on quit."
     warn "Please quit iTerm and run this from Terminal.app or an SSH session."
