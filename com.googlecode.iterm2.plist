@@ -5095,6 +5095,7 @@
     <array>
       <string>3.2.0</string>
       <string>3.3.7</string>
+      <string>3.3.9</string>
     </array>
     <key>NoSyncBFPRecents</key>
     <array>
@@ -5926,7 +5927,7 @@
     <key>SUHasLaunchedBefore</key>
     <true/>
     <key>SULastCheckTime</key>
-    <date>2020-01-19T18:54:19Z</date>
+    <date>2020-03-26T18:03:40Z</date>
     <key>SavePasteHistory</key>
     <false/>
     <key>ShowBookmarkName</key>
@@ -6389,7 +6390,7 @@
     <key>findRegex_iTerm</key>
     <false/>
     <key>iTerm Version</key>
-    <string>3.3.7</string>
+    <string>3.3.9</string>
     <key>kCPKSelectionViewPreferredModeKey</key>
     <integer>0</integer>
     <key>kCPKSelectionViewShowHSBTextFieldsKey</key>
