@@ -5874,7 +5874,7 @@
     <false/>
     <key>PointerActions</key>
     <dict>
-      <key>Button,1,1,,</key>
+      <key>Button,1,2,,</key>
       <dict>
         <key>Action</key>
         <string>kContextMenuPointerAction</string>
